@@ -1,17 +1,17 @@
 /* Estilizando a página */
 /* As cores podem ser citadas com seu nome ou valores hex RGB*/
+/* é possivel utilizar classes diferentes para em vez de usar as tags body, strong etc - https://www.w3schools.com/cssref/sel_class.php */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     background-color: #0F1035;
-    h1{
-        color: white;
-        strong{
-            color: #7FC7D9;
-        };
-    };
-    p{
-        color: #7FC7D9;
-    };
-    a{
-        color: #365486;
-    };
-};
+    color: white;
+}
+
+.titulo-destaque{
+    color: #7FC7D9;
+}
