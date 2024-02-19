@@ -8,10 +8,12 @@
 }
 
 body {
+    height: 100vh; /* altura 100% do viewport, informação esta, que se encontra no head, meta name*/
+    box-sizing: border-box; /* Esta propriedade serve para controlar tudo que esta dentro do body, caso a intenção seja manter todo o conteúdo dentro da configuração do BODY. Importante ler a documentação para endenter mais: https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing */
     background-color: #0F1035;
     color: white;
 }
 
-.titulo-destaque{
+.titulo-destaque {
     color: #7FC7D9;
 }
