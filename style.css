@@ -1,8 +1,3 @@
-/* Estilizando a página */
-/* As cores podem ser citadas com seu nome ou valores hex RGB*/
-/* é possivel utilizar classes diferentes para em vez de usar as tags body, strong etc - https://www.w3schools.com/cssref/sel_class.php */
-
-/* Importando uma fonte para dentro do projeto utilizando o google fonts. Importante pensar que é possivel importar várias fontes com um mesmo link, colocando tais fontes nos mesmo padrões de formatação. O proprio site, acopla as fontes em um único link, quando você seleciona tais fontes no mesmo. Importante conferir as fontes antes da importação */
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@100..900&display=swap');
 
 * {
@@ -11,8 +6,8 @@
 }
 
 body {
-    height: 100vh; /* altura 100% do viewport, informação esta, que se encontra no head, meta name*/
-    box-sizing: border-box; /* Esta propriedade serve para controlar tudo que esta dentro do body, caso a intenção seja manter todo o conteúdo dentro da configuração do BODY. Importante ler a documentação para endenter mais: https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing */
+    height: 100vh;
+    box-sizing: border-box; 
     background-color: #0F1035;
     color: white;
 }
@@ -21,12 +16,11 @@ body {
     color: #7FC7D9;
 }
 
-/* Criação de caixas, e organizando os conteúdos.  Documentação: https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
 .apresentacao {
-    margin: 5% 10%; /* Criação de margem para todo o contéudo dentro desta classe */
+    margin: 5% 10%;
     display: flex; 
-    align-items: center; /* Alinha os itens relacionados ao proprio alinhamento deles */
-    justify-content: space-between; /* espaçamento entre as caixas que estão no section e o que não esta (texto vs imagem) */
+    align-items: center;
+    justify-content: space-between;
 }
 
 .apresentacao__conteudo {
