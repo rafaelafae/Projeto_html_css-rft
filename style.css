@@ -23,7 +23,7 @@ body {
 
 /* Criação de caixas, e organizando os conteúdos.  Documentação: https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
 .apresentacao {
-    margin: 10%; /* Criação de margem para todo o contéudo dentro desta classe */
+    margin: 5% 10%; /* Criação de margem para todo o contéudo dentro desta classe */
     display: flex; 
     align-items: center; /* Alinha os itens relacionados ao proprio alinhamento deles */
     justify-content: space-between; /* espaçamento entre as caixas que estão no section e o que não esta (texto vs imagem) */
@@ -31,7 +31,9 @@ body {
 
 .apresentacao__conteudo {
     width: 615px;
-    height: 482;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
 }
 
 .apresentacao__conteudo__titulo {
@@ -52,7 +54,7 @@ body {
 
 .apresentacao__links__link {
     background-color: #7FC7D9;
-    width: 280px;
+    width: 200px;
     border-radius: 16px;
     text-align: center;
     font-size: 24px;
@@ -62,4 +64,9 @@ body {
     font-family: "Montserrat", sans-serif;
     font-size: 24px;
     font-weight: 600;
+}
+
+.profile-photo {
+    border-radius: 500px;
+    width: 45%;
 }
