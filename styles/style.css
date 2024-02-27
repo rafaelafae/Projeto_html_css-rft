@@ -12,36 +12,59 @@ body {
     color: white;
 }
 
-.titulo-destaque {
-    color: #7FC7D9;
+.header {
+    /* Se a propriedade possuir 4 valores, a sequencia de valores fica na seguinte sequencia: superior, direita, inferior e esquerda; Se a propriedade possuir 2 valores, a sequencia de valores ficam da seguinte forma: top and bottom e right and left */
+    padding: 2% 0 0 10%;
 }
 
-.apresentacao {
-    padding: 5%;
+.header__menu {
+    display: flex;
+    gap: 80px;
+}
+
+.header__menu__link {
+    font-family: "Montserrat", sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    color: #7FC7D9;
+    text-decoration: none;
+}
+
+.profile-photo {
+    border-radius: 500px;
+    width: 50%;
+}
+
+.intro {
+    padding: 5% 10%;
     display: flex; 
     align-items: center;
     justify-content: space-between;
 }
 
-.apresentacao__conteudo {
-    width: 615px;
+.intro__content {
+    width: 570px;
     display: flex;
     flex-direction: column;
-    gap: 80px;
+    gap: 20px;
 }
 
-.apresentacao__conteudo__titulo {
-    font-size: 26px;
+.intro__content__title {
     font-family: "Krona One", sans-serif;
+    font-size: 26px;
 }
 
-.apresentacao__conteudo__texto {
-    font-size: 16px;
+.title-emphasis {
+    color: #7FC7D9;
+}
+
+.intro__content__text {
     font-family: "Montserrat", sans-serif;
+    font-size: 16px;
     font-weight: 400;
 }
 
-.apresentacao__links {
+.intro__links {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -49,13 +72,13 @@ body {
     gap: 32px;
 }
 
-.apresentacao__links__subtitulo {
+.intro__links__subtitle {
     font-family: "Krona one", sans-serif;
-    font-weight: 400;
     font-size: 16px;
+    font-weight: 400;
 }
 
-.apresentacao__links__link {
+.intro__links__link {
     /* background-color: #7FC7D9; ctrl k c */ 
     display: flex;
     justify-content: center;
@@ -73,21 +96,16 @@ body {
     font-weight: 600;
 }
 
-.apresentacao__links__link:hover {
+.intro__links__link:hover {
     background-color: #7FC7D9;
 }
 
-.profile-photo {
-    border-radius: 500px;
-    width: 80%;
-}
-
-.rodape {
+.footer {
     padding: 24px;
     color: #0F1035;
     background-color: #7FC7D9;
     text-align: center;
-    font-size: 14px;
     font-family: "Montserrat", sans-serif;
+    font-size: 14px;
     font-weight: 400;
 }
