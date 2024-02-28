@@ -1,5 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@100..900&display=swap');
 
+/* Variáveis no CSS (um endereço na sua memória para guardar um valor) */
+:root {
+    --cor-primaria: #0F1035;
+    --cor-secundaria: #f6f6f6;
+    --cor-terciaria: #7FC7D9;
+    --cor-hover: #365486;
+    --fonte-primaria: "Krona One", sans-serif;
+    --fonte-secundaria: "Montserrat", sans-serif;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -8,8 +18,8 @@
 body {
     /* height: 100vh; */
     box-sizing: border-box; 
-    background-color: #0F1035;
-    color: white;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
 }
 
 .header {
@@ -19,14 +29,14 @@ body {
 
 .header__menu {
     display: flex;
-    gap: 80px;
+    gap: 70px;
 }
 
 .header__menu__link {
-    font-family: "Montserrat", sans-serif;
-    font-size: 24px;
+    font-family: var(--fonte-secundaria);
+    font-size: 18px;
     font-weight: 600;
-    color: #7FC7D9;
+    color: var(--cor-terciaria);
     text-decoration: none;
 }
 
@@ -36,30 +46,31 @@ body {
 }
 
 .intro {
-    padding: 5% 10%;
+    padding: 4% 10%;
     display: flex; 
     align-items: center;
     justify-content: space-between;
+    gap: 2%;
 }
 
 .intro__content {
-    width: 570px;
+    width: 620px;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 18px;
 }
 
 .intro__content__title {
-    font-family: "Krona One", sans-serif;
-    font-size: 26px;
+    font-family: var(--fonte-primaria);
+    font-size: 22px;
 }
 
 .title-emphasis {
-    color: #7FC7D9;
+    color: var(--cor-terciaria);
 }
 
 .intro__content__text {
-    font-family: "Montserrat", sans-serif;
+    font-family: var(--fonte-secundaria);
     font-size: 16px;
     font-weight: 400;
 }
@@ -73,7 +84,7 @@ body {
 }
 
 .intro__links__subtitle {
-    font-family: "Krona one", sans-serif;
+    font-family: var(--fonte-primaria);
     font-size: 16px;
     font-weight: 400;
 }
@@ -83,29 +94,29 @@ body {
     display: flex;
     justify-content: center;
     gap: 16px;
-    border: 2px dotted #7FC7D9;
+    border: 2px dotted var(--cor-terciaria);
     width: 378px;
     border-radius: 8px;
     text-align: center;
     font-size: 16px;
     padding: 21.5px 0;
     text-decoration: none;
-    color: #f6f6f6;
-    font-family: "Montserrat", sans-serif;
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-secundaria);
     font-size: 24px;
     font-weight: 600;
 }
 
 .intro__links__link:hover {
-    background-color: #7FC7D9;
+    background-color: var(--cor-hover);
 }
 
 .footer {
     padding: 24px;
-    color: #0F1035;
-    background-color: #7FC7D9;
+    color: var(--cor-primaria);
+    background-color: var(--cor-terciaria);
     text-align: center;
-    font-family: "Montserrat", sans-serif;
+    font-family: var(--fonte-secundaria);
     font-size: 14px;
     font-weight: 400;
 }
