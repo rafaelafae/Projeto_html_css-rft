@@ -113,7 +113,7 @@ body {
 
 .profile-photo {
     border-radius: 100%;
-    width: 50%;
+    width: 40%;
 }
 
 ul {
@@ -246,6 +246,7 @@ ul {
     }
     .header__menu {
         justify-content: center;
+        align-items: center;
     }
     .intro {
         flex-direction: column;
