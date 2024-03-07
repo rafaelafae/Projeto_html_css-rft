@@ -161,7 +161,7 @@ ul {
 }
 
 .progress-bar-htmlcss {
-    width: 40%;
+    width: 50%;
     height: 100%;
     background-color: var(--cor-hover);
     border-radius: 5rem;
